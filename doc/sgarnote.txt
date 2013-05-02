@@ -1,0 +1,33 @@
+1.  Overview
+2.  Todo
+3.  Setup
+  .1  Code base:
+    - https://github.com/sgarwang/refinerycms-bootstrap
+  .2  RVM:
+    - rvm install 1.9.3
+    - rvm use 1.9.3
+    - rails new issac
+    - http://railsapps.github.io/openssl-certificate-verify-failed.html
+      * rvm -v                                  ; rvm 1.19.6
+      * rvm osx-ssl-certs status all            ; Old
+      * sudo rvm osx-ssl-certs cron install     ; Automatic certs updating installed.
+      * rvm osx-ssl-certs update                ; __rvm_try_sudo: command not found
+        - brew update
+        - brew install openssl
+        $ brew link openssl --force
+        $ brew install curl-ca-bundle           ; Not fixed
+        => Vim line 40 and use 'sudo'           ; Updated...
+  .3  Issac / Git
+    - References:
+      * https://help.github.com/articles/generating-ssh-keys
+        - Learn to setup your SSH access
+      * https://help.github.com/articles/using-ssh-over-the-https-port
+        - ssh -T -p 443 git@ssh.github.com
+        - vim ~/.ssh/config
+        - ssh -T git@github.com
+    (1) setup SSH access
+    (2) create a git on github
+    (3) git clone git@github.com:sgarwang/issac.git
+    (4) edit and you can push
+  
+      
